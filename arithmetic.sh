@@ -37,3 +37,24 @@ echo "Read the values from the Dictionary into the array"
 declare -a Array
 Array=("${dictionary[@]}")
 echo "Array ${Array[@]}"
+
+#UC8
+echo "Sort the results to show the Computation Result in the Descending Order"
+for (( i = 0; i < 4 ; i++ ))
+do
+   for (( j = $i; j < 4; j++ ))
+   do
+      if [ ${Array[$i]} -lt ${Array[$j]}  ]; then
+           t=${Array[$i]}
+           Array[$i]=${Array[$j]}
+           Array[$j]=$t
+      fi
+   done
+done
+
+echo -e "\nSorted Numbers in descending Order:"
+for (( i=0; i < 4; i++ ))
+do
+  echo ${Array[$i]}
+done
+
