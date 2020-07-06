@@ -20,3 +20,8 @@ echo $expr2
 echo "Compute c + a / b"
 expr3=`expr $c + $a / $b`
 echo $expr3
+
+#UC5
+echo "Compute a % b + c"
+expr4=`expr $a % $b + $c`
+echo $expr4
