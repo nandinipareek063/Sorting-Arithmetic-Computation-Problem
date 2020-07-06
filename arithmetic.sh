@@ -34,9 +34,8 @@ echo "dictionary is ${dictionary[@]}"
 
 #UC7
 echo "Read the values from the Dictionary into the array"
-declare -a Array
-Array=("${dictionary[@]}")
-echo "Array ${Array[@]}"
+Array=([0]=$expr1 [1]=$expr2 [2]=$expr3 [3]=$expr4)
+echo ${Array[*]}
 
 #UC8
 echo "Sort the results to show the Computation Result in the Descending Order"
