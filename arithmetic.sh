@@ -12,7 +12,7 @@ expr1=`expr $a + $b '*' $c`
 echo $expr1
 
 #UC3
-echo "Compute a + b * c"
+echo "Compute a * b + c"
 expr2=`expr $a '*' $b + $c`
 echo $expr2
 
