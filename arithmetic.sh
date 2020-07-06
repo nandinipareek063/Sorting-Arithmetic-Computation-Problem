@@ -31,3 +31,9 @@ echo $expr4
 echo "Store the results in a Dictionary for every Computation"
 declare -A dictionary=( ["key1"]=$expr1 ["key2"]=$expr2 ["key3"]=$expr3 ["key4"]=$expr4)
 echo "dictionary is ${dictionary[@]}"
+
+#UC7
+echo "Read the values from the Dictionary into the array"
+declare -a Array
+Array=("${dictionary[@]}")
+echo "Array ${Array[@]}"
