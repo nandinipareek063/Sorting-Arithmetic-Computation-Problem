@@ -16,3 +16,7 @@ echo "Compute a * b + c"
 expr2=`expr $a '*' $b + $c`
 echo $expr2
 
+#UC4
+echo "Compute c + a / b"
+expr3=`expr $c + $a / $b`
+echo $expr3
