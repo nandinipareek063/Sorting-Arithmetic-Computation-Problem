@@ -1,3 +1,4 @@
+
 echo "Welcome to Sorting Arithmetic Computation Problem"
 
 #UC1
@@ -25,3 +26,8 @@ echo $expr3
 echo "Compute a % b + c"
 expr4=`expr $a % $b + $c`
 echo $expr4
+
+#UC6
+echo "Store the results in a Dictionary for every Computation"
+declare -A dictionary=( ["key1"]=$expr1 ["key2"]=$expr2 ["key3"]=$expr3 ["key4"]=$expr4)
+echo "dictionary is ${dictionary[@]}"
